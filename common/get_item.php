@@ -29,3 +29,14 @@
     // while ($item = mysql_fetch_array($result)) {
     //     $pop[] = $item;
     // }
+?>
+
+<?php if ($debug) : ?>
+    <!-- Debug Mode -->
+    <div id="acceleration">
+        <h2>acceleration[m/s^2]</h2>
+        <p>x: <span id="acc-x"></span></p>
+        <p>y: <span id="acc-y"></span></p>
+        <p>z: <span id="acc-z"></span></p>
+     </div>
+<?php endif;?>

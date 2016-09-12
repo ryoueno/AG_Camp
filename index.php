@@ -7,6 +7,7 @@
     	<link rel="stylesheet" href="css/common.css">
 		<link rel="stylesheet" href="css/main.css">
     	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    	<script src="js/common.js"></script>
 	</head>
 	<body>
 		<!-- 設定ファイル読み込み -->
