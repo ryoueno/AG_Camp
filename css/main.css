@@ -3,3 +3,11 @@
 h1{
 	color:red;
 }
+
+.btn{
+    width: 20%;
+    height: 20vw;
+    margin: 2%;
+    -webkit-appearance: none;
+    border-radius: 5px;
+}
