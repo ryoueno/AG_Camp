@@ -1,4 +1,12 @@
 //音声
+var sound_num = 3;
+var now_sound = null;
+var sounds = [
+    'test.wav',
+    'test.wav',
+    'kansei.mp3'
+];
+
 window.AudioContext = window.AudioContext || window.webkitAudioContext;
 var context = new AudioContext();
 
@@ -39,24 +47,29 @@ var playSound = function(buffer) {
 // main
 window.onload = function() {
     // サウンドを読み込む
-    for()
-    getAudioBuffer('/sound/test.wav', function(buffer) {
+
+    getAudioBuffer('/sound/test.wav', function(buffer,i) {
         // 読み込み完了後にボタンにクリックイベントを登録
-        var btn = document.getElementById('btn');
+        str_id = 'btn1';
+        var btn = document.getElementById(str_id);
         btn.onclick = function() {
             // サウンドを再生
-
             playSound(buffer);
+            now_sound = 1;
         };
     });
-};
-
-function init(){
-    getAudioBuffer('/sound/test.wav', function(buffer){
+    getAudioBuffer('/sound/kansei.mp3', function(buffer,i) {
         // 読み込み完了後にボタンにクリックイベントを登録
-        playSound(buffer);
+        str_id = 'btn2';
+        var btn = document.getElementById(str_id);
+        btn.onclick = function() {
+            // サウンドを再生
+            playSound(buffer);
+            now_sound = 2;
+        };
     });
-}
+
+};
 
 //******
 
@@ -92,7 +105,7 @@ function start(){
             $(document.body).css( "background", "yellow" );
             //音声出力、インスタンスを変更
             start();
-            getAudioBuffer('/sound/test.wav', function(buffer) {
+            getAudioBuffer('/sound/'+sounds[now_sound], function(buffer) {
                 playSound(buffer);
             });
             se = se >= se_max ? 1 : se+1;
