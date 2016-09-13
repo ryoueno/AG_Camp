@@ -11,3 +11,47 @@ h1{
     -webkit-appearance: none;
     border-radius: 5px;
 }
+#btn1{
+    background-image: url("../images/button1.png");
+    background-size: 20vw 20vw;
+    background-repeat: no-repeat;
+}
+#btn2{
+    background-image: url("../images/button1.png");
+    background-size: 20vw 20vw;
+    background-repeat: no-repeat;
+}
+#btn3{
+    background-image: url("../images/button1.png");
+    background-size: 20vw 20vw;
+    background-repeat: no-repeat;
+}
+#btn4{
+    background-image: url("../images/button1.png");
+    background-size: 20vw 20vw;
+    background-repeat: no-repeat;
+}
+#btn5{
+    background-image: url("../images/button1.png");
+    background-size: 20vw 20vw;
+    background-repeat: no-repeat;
+}
+#btn6{
+    background-image: url("../images/button1.png");
+    background-size: 20vw 20vw;
+    background-repeat: no-repeat;
+}
+#btn7{
+    background-image: url("../images/button1.png");
+    background-size: 20vw 20vw;
+    background-repeat: no-repeat;
+}
+#btn8{
+    background-image: url("../images/button1.png");
+    background-size: 20vw 20vw;
+    background-repeat: no-repeat;
+}
+#image{
+    width: 80%;
+    margin: 8%;
+}
