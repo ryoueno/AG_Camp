@@ -38,5 +38,17 @@
         <p>x: <span id="acc-x"></span></p>
         <p>y: <span id="acc-y"></span></p>
         <p>z: <span id="acc-z"></span></p>
-     </div>
+    </div>
+
+    <div id="location">
+        <h2>geo location</h2>
+        <p>緯度: <span id="latitude"></span></p>
+        <p>経度: <span id="longitude"></span></p>
+    </div>
+
+    <audio id="sound-file" preload="auto">
+        <!-- <source src="http://〜.mp3" type="audio/mp3"> -->
+        <source src="/sound/test.wav" type="audio/wav" autostart="true">
+    </audio>
+    <input type="button" value="再生" onclick="start()">
 <?php endif;?>
