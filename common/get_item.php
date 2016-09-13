@@ -51,4 +51,6 @@
         <source src="/sound/test.wav" type="audio/wav" autostart="true">
     </audio>
     <input type="button" value="再生" onclick="start()">
+    <button id='btn'>Play</button>
+    <input type="button" value="初期化" onclick="init()">
 <?php endif;?>
